@@ -50,6 +50,10 @@ client = WebApplicationClient(GOOGLE_CLIENT_ID)
 def load_user(user_id):
     return User.get(user_id)
 
+@app.route("/hello")
+def hello():
+    return ("hello")
+
 @app.route("/")
 def index():
     if current_user.is_authenticated:
