@@ -151,4 +151,4 @@ def logout():
     return redirect(url_for("index"))
 
 if __name__ == "__main__":
-    app.run(ssl_context="adhoc", port=80)
+    app.run(ssl_context="adhoc")
